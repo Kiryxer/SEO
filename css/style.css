@@ -603,6 +603,7 @@ img {
 .info__item-text {
   line-height: 26px;
   color: rgba(51, 51, 51, 0.5);
+  min-height: 156px;
 }
 
 .social {
@@ -1502,7 +1503,7 @@ img {
   }
 }
 
-@media (max-width: 477px) {
+@media (max-width: 515px) {
   .menu__list-item {
     margin: 10px 0;
   }
@@ -1540,11 +1541,13 @@ img {
   }
 }
 
-@media (max-width: 364px) {
+@media (max-width: 368px) {
   .menu__list-login::before {
     display: none;
   }
+}
 
+@media (max-width: 364px) {
   .clients__images-img-7 {
     top: 73%;
     right: 0;
