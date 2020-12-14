@@ -467,6 +467,21 @@ img {
   padding-top: 200px;
 }
 
+.header__content-img {
+  opacity: 0;
+}
+
+.header__content-img._active {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .header__box {
   max-width: 470px;
 }
@@ -480,12 +495,26 @@ img {
   margin-bottom: 25px;
 }
 
+.header__box-title._active {
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
 .header__box-text {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   line-height: 35px;
   color: rgba(51, 51, 51, 0.5);
   margin-bottom: 30px;
+}
+
+.header__box-text._active {
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
 .header__box-link {
@@ -504,6 +533,13 @@ img {
   width: 100%;
   text-align: center;
   text-transform: uppercase;
+}
+
+.header__box-link._active {
+  -webkit-animation-name: bounceInUp;
+          animation-name: bounceInUp;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .menu {
@@ -550,6 +586,13 @@ img {
   text-transform: uppercase;
 }
 
+.menu._active {
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
 .info {
   margin-bottom: 70px;
 }
@@ -569,6 +612,7 @@ img {
   min-height: 400px;
   max-width: 200px;
   text-align: center;
+  opacity: 0;
 }
 
 .info__item-img {
@@ -602,6 +646,30 @@ img {
   min-height: 156px;
 }
 
+.info__item._active {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.info__item._active:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.info__item._active:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.info__item._active:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
 .social {
   padding: 64px 0;
   background-color: #f3f3f3;
@@ -623,6 +691,7 @@ img {
   color: #4bee6f;
   position: relative;
   padding-right: 20px;
+  opacity: 0;
 }
 
 .social__box-link::after,
@@ -635,6 +704,18 @@ img {
   position: absolute;
   right: 0;
   top: 5px;
+}
+
+.social__box-link._active,
+.understanding__box-link._active {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .social__images {
@@ -654,6 +735,11 @@ img {
   padding: 5px 27px;
 }
 
+.social__images-business-insider._active {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
 .social__images-business-insider,
 .social__images-forbes,
 .social__images-guardian,
@@ -663,6 +749,19 @@ img {
           box-shadow: 0px 10px 20px rgba(153, 151, 151, 0.5);
   border-radius: 10px;
   position: absolute;
+  opacity: 0;
+}
+
+.social__images-business-insider._active,
+.social__images-forbes._active,
+.social__images-guardian._active,
+.social__images-bbc._active {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .social__images-facebook,
@@ -675,6 +774,7 @@ img {
 .social__images-man-4,
 .social__images-man-5 {
   position: absolute;
+  opacity: 0;
 }
 
 .social__images-facebook img,
@@ -689,10 +789,32 @@ img {
   border-radius: 50%;
 }
 
+.social__images-facebook._active,
+.social__images-in._active,
+.social__images-youtube._active,
+.social__images-yellow._active,
+.social__images-man-1._active,
+.social__images-man-2._active,
+.social__images-man-3._active,
+.social__images-man-4._active,
+.social__images-man-5._active {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .social__images-facebook {
   position: absolute;
   top: -20px;
   left: 40%;
+}
+
+.social__images-facebook._active {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 .social__images-forbes {
@@ -701,10 +823,20 @@ img {
   right: 10%;
 }
 
+.social__images-forbes._active {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
 .social__images-guardian {
   padding: 21px 8px;
   right: 0;
   top: 37%;
+}
+
+.social__images-guardian._active {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 .social__images-bbc {
@@ -713,9 +845,19 @@ img {
   top: 28%;
 }
 
+.social__images-bbc._active {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
 .social__images-in {
   left: 21%;
   top: 16%;
+}
+
+.social__images-in._active {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 .social__images-youtube {
@@ -723,14 +865,35 @@ img {
   top: 26%;
 }
 
+.social__images-youtube._active {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
 .social__images-yellow {
   right: 40%;
   top: 13%;
 }
 
+.social__images-yellow._active {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
 .social__images-twitter,
 .social__images-volkswagen {
   position: absolute;
+  opacity: 0;
+}
+
+.social__images-twitter._active,
+.social__images-volkswagen._active {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .social__images-twitter {
@@ -738,9 +901,19 @@ img {
   left: 15%;
 }
 
+.social__images-twitter._active {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
 .social__images-volkswagen {
   bottom: 40%;
   right: 35%;
+}
+
+.social__images-volkswagen._active {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
 .social__images-man-1 {
@@ -748,9 +921,19 @@ img {
   left: 36%;
 }
 
+.social__images-man-1._active {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
 .social__images-man-2 {
   bottom: 20%;
   left: 8%;
+}
+
+.social__images-man-2._active {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
 }
 
 .social__images-man-3 {
@@ -758,14 +941,29 @@ img {
   left: 37%;
 }
 
+.social__images-man-3._active {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
 .social__images-man-4 {
   bottom: 10%;
   left: 40%;
 }
 
+.social__images-man-4._active {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
 .social__images-man-5 {
   bottom: 19%;
   right: 30%;
+}
+
+.social__images-man-5._active {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
 }
 
 .social__box,
@@ -783,6 +981,14 @@ img {
   margin-bottom: 32px;
 }
 
+.social__box-title._active,
+.understanding__box-title._active {
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
 .social__box-text,
 .understanding__box-text {
   line-height: 21px;
@@ -792,6 +998,74 @@ img {
 .social__box-text p,
 .understanding__box-text p {
   margin-bottom: 20px;
+  opacity: 0;
+}
+
+.social__box-text p._active,
+.understanding__box-text p._active {
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.social__box-text p._active:nth-child(1),
+.understanding__box-text p._active:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.social__box-text p._active:nth-child(2),
+.understanding__box-text p._active:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.social__box-text p._active:nth-child(3),
+.understanding__box-text p._active:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.social__box-text p._active:nth-child(4),
+.understanding__box-text p._active:nth-child(4) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.understanding__box-text {
+  overflow: hidden;
+}
+
+.understanding__box-text p._active {
+  -webkit-animation-name: fadeInRight;
+          animation-name: fadeInRight;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.understanding__box-text p._active:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.understanding__box-text p._active:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.understanding__box-text p._active:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.understanding__box-text p._active:nth-child(4) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 .understanding {
@@ -830,52 +1104,85 @@ img {
           box-shadow: 0px 10px 20px rgba(153, 151, 151, 0.5);
   border-radius: 50%;
   position: absolute;
+  opacity: 0;
+}
+
+.understanding__images-constellation._active,
+.understanding__images-eco-friendly._active,
+.understanding__images-internet._active,
+.understanding__images-mega._active,
+.understanding__images-rolex._active,
+.understanding__images-itw._active,
+.understanding__images-newell._active,
+.understanding__images-vodafone._active {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .understanding__images-constellation {
   top: 15px;
   left: 17%;
   padding: 18px 6px;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 .understanding__images-eco-friendly {
   right: 20%;
   padding: 18px 7px;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 
 .understanding__images-internet {
   top: 18%;
   left: 40%;
   padding: 23px 5px;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 .understanding__images-mega {
   top: 40%;
   padding: 16px 8px;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .understanding__images-rolex {
   right: 14%;
   padding: 19px 9px;
   top: 45%;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 .understanding__images-itw {
   bottom: 21%;
   padding: 6px 2px;
   right: 42%;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
 
 .understanding__images-newell {
   bottom: 15%;
   left: 25%;
   padding: 18px 8px;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
 .understanding__images-vodafone {
   padding: 10px 0;
   right: 16%;
   bottom: 10%;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .understanding__box {
@@ -1191,6 +1498,178 @@ img {
 
 .footer__item-social .footer__item-link--linkedin::before {
   background-image: url("../images/linkedin-black-icon.svg");
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@-webkit-keyframes bounceInUp {
+  0%, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0) scaleY(5);
+    transform: translate3d(0, 3000px, 0) scaleY(5);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0) scaleY(0.9);
+    transform: translate3d(0, -20px, 0) scaleY(0.9);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0) scaleY(0.95);
+    transform: translate3d(0, 10px, 0) scaleY(0.95);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0) scaleY(0.985);
+    transform: translate3d(0, -5px, 0) scaleY(0.985);
+  }
+
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@keyframes bounceInUp {
+  0%, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0) scaleY(5);
+    transform: translate3d(0, 3000px, 0) scaleY(5);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0) scaleY(0.9);
+    transform: translate3d(0, -20px, 0) scaleY(0.9);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0) scaleY(0.95);
+    transform: translate3d(0, 10px, 0) scaleY(0.95);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0) scaleY(0.985);
+    transform: translate3d(0, -5px, 0) scaleY(0.985);
+  }
+
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
 }
 
 @media (max-width: 1200px) {
